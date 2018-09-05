@@ -1,7 +1,7 @@
 <?php // callback.php
 require "vendor/autoload.php";
 require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
-$access_token = 'aHudq11NYnsmGhOHbJrQ8XRRRPdpjUKKV5NylbCCGlPza+BmXfbCP442D4YEh5QwaRdf3cKGNlJNLBtLs5ukrMBLhUUPP4D3z9Ph7ZagjTOLgiVUq5Yokxtm08vijM8dWXT2cH5hsR08DfzjAA8jRgdB04t89/1O/w1cDnyilFU=';
+$access_token = 'QI9yH61LtbLUjJkZ4oQr/ukn9ODZDVGGO1c5T1BB8wWnlWhrT39tXSoWr8iXjtbvd/mqCQQjHZzID6S7P8oKeeSu93TVI2AcmBlC7iokXRYo6XomDo7DfEdk57XfX+V9ZQrFv5wSX3kOCqUVf6nx2gdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -12,9 +12,9 @@ if (!is_null($events['events'])) {
 // Loop through each event
 foreach ($events['events'] as $event) {
 // Reply only when message sent is in 'text' format
-if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
+if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $event['message']['text'] == 'ขอ userid') {
 // Get text sent
-$text = $event['source']['userId'];
+$text = "userIDของคุณคือ : ".$event['source']['userId'];
 // Get replyToken
 $replyToken = $event['replyToken'];
 // Build message to reply back
