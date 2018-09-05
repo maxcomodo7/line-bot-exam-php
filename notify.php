@@ -1,5 +1,5 @@
-
-define(‘LINE_API’,”https://notify-api.line.me/api/notify");
+<?php
+define(‘LINE_API’,"https://notify-api.line.me/api/notify");
  
 $token = “t19dcUTxO9X5THprDCsKuMxkEnRCw68o3PzY32LGCG3”; //ใส่Token ที่copy เอาไว้
 $str = “Hello”; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
