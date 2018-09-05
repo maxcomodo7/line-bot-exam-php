@@ -1,9 +1,8 @@
 <?php
 require "vendor/autoload.php";
-$access_token = 'h6mtWI5v4AnNByl38IuofzhQ22O1Hgz4BefbMtHpp8iX9GSmBdE2tNMw5ZrIXdSrm8ySuUV0aZAfCdiVOPOjVWh63VF5TeblHiKlPj5GbPnyKvla1W4d+y0dgUbUTV4UkxVohrWhqC2eQI6dQsheSQdB04t89/1O/w1cDnyilFU=
-';
-$channelSecret = '63137591c3e2ae3ed0b7fe6da3369978';
-$idPush = 'Ucdcd57e0f331c2053a61ef8e114dce53'
+$access_token = 'QI9yH61LtbLUjJkZ4oQr/ukn9ODZDVGGO1c5T1BB8wWnlWhrT39tXSoWr8iXjtbvd/mqCQQjHZzID6S7P8oKeeSu93TVI2AcmBlC7iokXRYo6XomDo7DfEdk57XfX+V9ZQrFv5wSX3kOCqUVf6nx2gdB04t89/1O/w1cDnyilFU=';
+$channelSecret = '99b832e0d5bcfcfbce3739874efef43c';
+$idPush = 'U80ad520d26c5d3bde39e62139780767b'
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello world');
